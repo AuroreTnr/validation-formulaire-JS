@@ -257,10 +257,6 @@ function clickReset(){
 
 // APPEL D' UN API POUR AUTO COMPLET L' ADRESSE (API GOUV.FR)---------
 
-// BUT => QUAND L' UTILISATEUR TAPE SON ADRESSE UNE DATALIST LUI AI PROPOSÉ.
-// UNE FOIS QU' IL CLIQUE SUR L' OPTION DE SON CHOIX, LA VILLE ET LE CODE POSTAL DOIVENT
-// SE METTRE AUTOMATIQUEMENT DANS LES CHAMPS DE L' INPUTS CODE POSTAL ET VILLE.
-
 
 const inputSelect = document.querySelector("#input-select")
 inputSelect.addEventListener("keyup", adresseAutoComplete);
