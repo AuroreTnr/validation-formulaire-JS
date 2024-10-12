@@ -1,0 +1,168 @@
+
+/* FORMULAIRE */
+
+.main-title{
+    margin: 10px 0 20px 0;
+}
+p {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+
+.container-contact {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+input[type="text"]{
+    width: 85%;
+}
+
+label, input, select, textarea {
+    max-width: 85%;
+    display: block;
+    padding: 5px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    border-color: #ccc;
+    font-size: 16px;
+}
+
+.error-msg{
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.input-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+fieldset {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+
+/* BUTTON */
+
+.btn{
+    display: flex;
+}
+
+input[type="submit"], input[type="reset"]{
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: calc(1vmin + 8px);
+    color: #f1f1f1;
+    background: #000;
+    margin: 20px 5px;
+}
+
+
+input[type="reset"] {
+    background: var(--color-navbar);
+}
+
+
+/* ANIMATION BUTTON */
+
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background: #f1f1f1;
+    color: #333;
+}
+
+/* ANIMATION INPUT */
+
+input:focus {
+    box-shadow: 1px 1px 2px 5px #63b9ff;
+
+}
+
+input[type="radio"], input[type="checkbox"] {
+    box-shadow: none;
+}
+
+
+
+/* STYLE DATALIST */
+#input-select {
+    width: 500px;
+    padding: 10px;
+    background: transparent;
+}
+
+/* DATALIST */
+
+.select-adresse {
+    position: absolute;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+    font-family: sans-serif;
+    width: 350px;
+    padding: 5px;
+    max-height: 10rem;
+    overflow-y: auto
+    
+}
+
+
+
+
+/* ============== */
+
+/* MEDIA QUERY */
+
+
+@media screen and (max-width: 682px){
+
+    label, input, select, textarea {
+        max-width: 85%;
+        display: block;
+        padding: 5px;
+        margin: 10px 5px;
+        border-radius: 5px;
+        border-color: #ccc;
+        font-size: 16px;
+    }
+    
+
+
+    /* NAVIGATION HEADER */
+
+    .nav-header {
+        padding: 10px;
+    }    
+
+    .input-radio label {
+        font-size: 14px;
+    }
+
+
+    /* BTN FORM */
+    
+    .btn {
+        justify-content: center;
+
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarditou Contact</title>
+    <link rel="stylesheet" href="assets/css/style-commun.css">
+    <link rel="stylesheet" href="assets/css/style-contact.css">
+</head>
+<body>
+
+
+    <!-- HEADER -->
+    <header>
+        <div class="banniere-logo">
+            <img src="assets/src/img/jarditou_logo.jpg" alt="logo du site" class="logo">
+            <p class="slogan">Tout le jardin</p>
+        </div>
+
+
+        <!-- NAVIGATION -->
+            <nav class="nav-header">
+                <a href="#" class="jarditou-logo
+                ">Jarditou</a>
+                <a href="#">Accueil</a>
+                <a href="#">Nos produits</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">A propos</a>
+                <a href="#">Mon compte</a>
+
+                <div class="burger-btn">
+                    <span class="line l1"></span>
+                    <span class="line l2"></span>
+                    <span class="line l3"></span>
+                </div>
+
+            </nav>
+
+            <div class="box"><img src="assets/src/img/promotion.jpg" alt="Promotion sur les lames de terrasse" class="banniere-promo"></div>
+    </header>
+
+
+    <!-- SECTION CONTACT -->
+    
+    <section>
+    <h1 class="main-title">Contact</h1>
+    <hr>
+
+        <form action="http://bienvenu.net/script.php" method="post" enctype="multipart/form-data" id="form-contact">
+
+            <!-- COORDONNEES -->
+            <div class="container-contact">
+                <p>* Ces zones sont obligatoires</p>
+
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    
+                    <span class="error-msg" id="error-name"></span>
+                    <label for="name">Votre nom : *</label> 
+                    <input type="text" id="name" name="name" placeholder="Votre nom" maxlength="20" autofocus required> 
+                
+                    <span class="error-msg" id="error-prenom"></span>
+                    <label for="prenom">Votre prénom : *</label> 
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" maxlength="20" required> 
+                    
+                    <!-- RADIO BTN GENRE -->
+                    <span>Sexe : *</span>
+                    <div class="input-radio">
+                        <input type="radio" value="feminin" name="genre" id="feminin" required>
+                        <label for="feminin">Féminin</label>
+                        <input type="radio" value="masculin" name="genre" id="masculin" required>
+                        <label for="masculin">Masculin</label>
+                    </div>
+                    
+
+                    <label for="dateNaissance">Date de naissance : *</label> 
+                    <input type="date" id="dateNaissance" name="dateNaissance" required> 
+                
+
+                    <!-- TEST DATALIST -->
+                    <span class="error-msg" id="error-adresse"></span>
+                    <label for="input-select">Adresse : *</label> 
+                    
+                    <input list="select-adresse" id="input-select" name="input-select" required placeholder="Entrez votre adresse">
+                    <datalist name="select-adresse" id="select-adresse"></datalist>
+
+                    <input type="text" id="adresse" name="adresse" required>
+
+                    
+                    <span class="error-msg" id="error-codePostal"></span>
+                    <label for="codePostal">Code Postal : *</label> 
+                    <input type="number" id="codePostal" name="codePostal" placeholder="Votre code postal" required> 
+                
+                    <span class="error-msg" id="error-ville"></span>
+                    <label for="ville">Ville : *</label> 
+                    <input type="text" id="ville" name="ville" required > 
+                
+                
+                    <span class="error-msg" id="error-email"></span>
+                    <label for="email">Email : *</label> 
+                    <input type="email" id="email" name="email" placeholder="dave.loper@afpa.fr" required> 
+                </fieldset>
+                
+                <!-- MESSAGE -->
+                <fieldset>
+                    <legend>Votre demande</legend>
+                    <label for="selectList">Sujet : *</label>
+                    <select name="sujetList" id="selectList" required>
+                        <option value="">Veuillez séléctionner un sujet</option>
+                        <option value="mescommandes">Mes commandes</option>
+                        <option value="question">Question sur un produit</option>
+                        <option value="reclamation">Réclamation</option>
+                        <option value="autre">Autres</option>
+                    </select> <br>
+
+                    <span class="error-msg" id="error-message"></span>
+                    <label for="message">Votre question : *</label>
+                    <textarea name="message" id="message" required></textarea>
+                </fieldset>
+
+
+                <div class="input-radio">
+                    <input type="checkbox" id="checkCondition" required>
+                    <label for="checkCondition">* J' accepte le traitement informatique de ce formulaire</label>
+                </div>
+    
+                <div class="btn">
+                    <input type="submit" value="Envoyer" id="btn-submit">
+                    <input type="reset" value="Annuler" id="btn-reset">
+                </div>
+            </div>
+
+
+            
+        </form>
+    </section>
+
+    <!--  FOOTER -->
+    <footer>
+            
+        <nav class="nav-footer">
+            <a href="#">Mentions legales</a>
+            <a href="#">Horaires</a>
+            <a href="#">Plan du site</a>
+        </nav>
+    </footer>
+    
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script-toogle.js"></script>
+
+
+        
+</body>
+</html>
